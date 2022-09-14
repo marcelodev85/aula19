@@ -75,6 +75,8 @@ nav ul li a:hover::before {
     left: 0;
     top: calc(50% - 90px);
     z-index: 2000;
+    
+    
 }
 
 .social ul {
@@ -87,7 +89,7 @@ nav ul li a:hover::before {
     background: var(--primary-color);
     padding: 10px 15px;
     text-decoration: none;
-    transition: width 3s;
+    
 
 }
 
@@ -112,8 +114,11 @@ nav ul li a:hover::before {
 }
 
 .social ul li a :hover {
-    width: 100px;
-    transform: scaleX(1.5) translate(50px, 0px);
+    width: 40px;
+    transform: scaleX(1) translate(20px, 0px);
+    transition-duration: 1s;
+    
+
 }
 
 
@@ -183,3 +188,4 @@ nav ul li a:hover::before {
     }
 
 }
+
