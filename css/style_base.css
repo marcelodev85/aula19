@@ -38,11 +38,12 @@ nav ul {
 }
 
 nav ul li {
-    margin: 20px;
+    margin: 20px, auto;
 }
 
 nav ul li a {
     position: relative;
+    text-decoration: none;
     margin: 15px;
     font-size: 25px;
     color: var(--secondary-color);
@@ -55,13 +56,16 @@ nav ul li a::before {
     position: absolute;
     bottom: -10px;
     height: 5px;
+    width: 0;
+    transition: 0.3s;
 
 
     /*dica: width iniciando em 0 e aplicação de uma transição*/
 }
 
 nav ul li a:hover::before {
-    /*dica: width 100*/
+    width: 100%;
+
 }
 
 
