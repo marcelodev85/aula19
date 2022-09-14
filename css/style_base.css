@@ -55,7 +55,7 @@ nav ul li a::before {
     position: absolute;
     bottom: -10px;
     height: 5px;
-    width: 0;
+
 
     /*dica: width iniciando em 0 e aplicação de uma transição*/
 }
@@ -83,7 +83,8 @@ nav ul li a:hover::before {
     background: var(--primary-color);
     padding: 10px 15px;
     text-decoration: none;
-    /* transition: ; */
+    transition: width 3s;
+
 }
 
 .social ul li .icon-facebook {
@@ -106,8 +107,9 @@ nav ul li a:hover::before {
     background: #666666;
 }
 
-.social ul li a:hover {
-    /* transform: ; */
+.social ul li a :hover {
+    width: 100px;
+    transform: scaleX(1.5) translate(50px, 0px);
 }
 
 
